@@ -1,0 +1,11 @@
+.pro{
+    border:1px solid black;
+    width:25%;
+    margin:20px;
+    margin-left:200px
+
+}
+.pro:hover{
+    color:red;
+    background-color:black;
+}

@@ -1,0 +1,9 @@
+.one{
+    border-radius:50%;
+    color:white;
+    background-color: green;
+    font-size:20px;
+    font-weight:bold;
+    width:40%;
+    height:50%
+}

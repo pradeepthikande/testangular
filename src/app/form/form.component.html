@@ -1,0 +1,32 @@
+<!--<p>
+  form works!
+</p>-->
+<div class="ui-g" [ngClass]="['f1']">
+
+  <div class="ui-g-12 ui-md-6" [ngClass]="['form']">
+    <small  [ngClass]="['forms']" >{{title}}</small>
+
+      <div class="ui-g-12 ">
+        <input type="text" pInputText  name="name" placeholder="enter product name" id="in" size="20px" [ngClass]="['form1']" [(ngModel)]="details.productName"/>
+      </div>
+
+      <div class="ui-g-12">
+        <textarea type="text" pInputTextArea  name="description" placeholder="enter product desciption" id="in" rows="5" cols="15" [ngClass]="['form2']" [(ngModel)]="details.description"></textarea>
+      </div>
+
+      <div class="ui-g-12">
+        <p-calendar  [showIcon]="true" placeholder="manufacture date" name="md" [ngClass]="['form3']" [(ngModel)]="details.md"></p-calendar>
+      </div>
+
+      <div class="ui-g-12">
+        <p-calendar  [showIcon]="true" placeholder="expiry date" name="ed" [ngClass]="['form4']" [(ngModel)]="details.ed"></p-calendar>
+      </div>
+
+      <div class="ui-g-12">
+       <button pButton type="button"  label="Click" (click)="add()"></button>
+      </div>
+
+  </div>
+  
+</div>
+
