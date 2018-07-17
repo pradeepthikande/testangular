@@ -1,9 +1,11 @@
-<!--<p>
-  product works!
-</p>-->
 
-<div *ngFor="let get of pro" [ngClass]="['pro']" class="ui-g-12 ui-md-3" >
-{{get|json}}
+<div *ngFor="let get of pro;let i='index' " [ngClass]="['pro']" class="ui-g-12 ui-md-3"  (click)="show(i)" >
+{{get.name}}<br>
+{{get.description}}<br>
+{{get.md}}<br>
+{{get.ed}}
 </div>
 
 
+
+<app-form  [sending]="p1" *ngIf="visible"></app-form>
